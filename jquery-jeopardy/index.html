@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jquery Jeopardy</title>
+  </head>
+  <body>
+    <div id="title">
+      <h1>Welcome to Jeopardy!</h1>
+      <h4>Your Score: <span class="amount">$0</span></h4>
+      <p>Click a box to begin</p>
+    </div>
+
+    <br />
+    <div id="grid">
+      <div class="row">
+        <div class="item glow">$100</div>
+        <div class="item glow">$100</div>
+        <div class="item glow">$100</div>
+        <div class="item glow">$100</div>
+        <div class="item glow">$100</div>
+      </div>
+      <div class="row">
+        <div class="item glow">$200</div>
+        <div class="item glow">$200</div>
+        <div class="item glow">$200</div>
+        <div class="item glow">$200</div>
+        <div class="item glow">$200</div>
+      </div>
+      <div class="row">
+        <div class="item glow">$300</div>
+        <div class="item glow">$300</div>
+        <div class="item glow">$300</div>
+        <div class="item glow">$300</div>
+        <div class="item glow">$300</div>
+      </div>
+      <div class="row">
+        <div class="item glow">$400</div>
+        <div class="item glow">$400</div>
+        <div class="item glow">$400</div>
+        <div class="item glow">$400</div>
+        <div class="item glow">$400</div>
+      </div>
+      <div class="row">
+        <div class="item glow">$500</div>
+        <div class="item glow">$500</div>
+        <div class="item glow">$500</div>
+        <div class="item glow">$500</div>
+        <div class="item glow">$500</div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <form class="modalForm">
+        <span class="close">&times;</span>
+        <h1 class="title"></h1>
+        <div class="quest">
+          <h3 class="question">Q?</h3>
+          <input type="text" placeholder="Your Answer" class="answer" />
+          <input type="submit" class="answer-btn" />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
